@@ -27,37 +27,5 @@
         div.innerHTML = '<center><div id="unityContainer" style="width: 960px; height: 600px; margin: auto"></div></center>';
       }
     </script>
-
-    <script type="text/javascript">
-    //< !--
-        function disp() {
-
-          getSize1();
-          getSize2();
-        }
-
-      //画面サイズを取得する
-      function getSize1() {
-        var size = "横幅 = " + screen.width
-          + "、　高さ = " + screen.height;
-        document.getElementById("dat1").innerHTML = size;
-      }
-
-      //ウィンドウサイズを取得する
-      function getSize2() {
-        var wid, hei, size;
-        wid = window.innerWidth;
-        hei = window.innerHeight;
-        size = "横幅 = " + wid + "、　高さ = " + hei;
-        document.getElementById("dat2").innerHTML = size;
-      }
-    //-->
-    </script>
-    
-    <div style="background-color : #CCC;">
-      <input type="button" value="表示" onClick="disp()">
-      画面サイズ　　　　：　<span id="dat1"></span>
-      ウィンドウサイズ　：　<span id="dat2"></span>
-    </div>
   </body>
 </html>
